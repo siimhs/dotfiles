@@ -1,7 +1,9 @@
 execute pathogen#infect()
 set fileencodings=utf-8
 set encoding=utf-8
+set expandtab
 set tabstop=4
+set autoindent
 
 "Search down into subfolders"
 "Provides tab-completion for all file-related tasks"
@@ -27,3 +29,8 @@ set relativenumber
 " zz - move cursor in middle of screen
 nnoremap k kzz
 nnoremap j jzz
+autocmd FileType html nnoremap ,html :-1read $HOME/.vim/snippets/html<CR>jjji
+autocmd FileType html nnoremap ,p i<p></p><Esc>hhhi
+autocmd FileType html nnoremap ,div i<div></div><Esc>hhhhhi
+autocmd FileType html nnoremap ,title i<title></title><Esc>hhhhhhhi
+autocmd FileType html nnoremap ,title i<title></title><Esc>hhhhhhhi
