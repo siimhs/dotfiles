@@ -4,6 +4,7 @@ set encoding=utf-8
 set expandtab
 set tabstop=4
 set autoindent
+set backspace=2 "make backspace work like most other programs
 
 "Search down into subfolders"
 "Provides tab-completion for all file-related tasks"
