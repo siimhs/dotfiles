@@ -53,9 +53,4 @@ fi
 #xterm -geometry 80x50+494+51 &
 #xterm -geometry 80x20+494-0 &
 #exec xterm -geometry 80x66+0+0 -name login
-wal -R &
-xcompmgr &
-setxkbmap -layout "us,ee" -option "grp:alt_shift_toggle" &
-numlockx &
-xrandr --output HDMI2 --auto --mode 3440x1440 --right-of eDP1 && xrandr --output eDP1 --off &
-i3
+exec dwm
