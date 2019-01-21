@@ -1,0 +1,5 @@
+clear Lock
+keysym Caps_Lock = Escape
+add lock = Caps_Lock
+keysym XF86Back = Prior
+keysym XF86Forward = Next
