@@ -26,6 +26,7 @@ syntax enable
 filetype plugin on
 
 set relativenumber
+set number
 
 " zz - move cursor in middle of screen
 nnoremap k kzz
@@ -35,3 +36,6 @@ autocmd FileType html nnoremap ,p i<p></p><Esc>hhhi
 autocmd FileType html nnoremap ,div i<div></div><Esc>hhhhhi
 autocmd FileType html nnoremap ,title i<title></title><Esc>hhhhhhhi
 autocmd FileType html nnoremap ,title i<title></title><Esc>hhhhhhhi
+
+" allow saving of files as sudo when I forgot to start vim using sudo
+cmap w!! w !sudo tee > /dev/null %
